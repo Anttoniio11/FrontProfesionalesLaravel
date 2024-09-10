@@ -1,0 +1,303 @@
+/* contenido header */
+h1{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #59009A;
+  font-style: italic;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  position: absolute;
+  padding: 0;
+  background-color: #fffcfc;
+  width: 100%;
+  left: 0%;
+  height: 100vh;
+  position: relative;
+}
+
+.arriba {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #333;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.logo h1 {
+    margin: 0;
+}
+.user {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+}
+.user a {
+    margin-right: 20px;
+    color: #59009A;
+    text-decoration: none;
+  
+    margin-inline-start: auto;
+}
+.user img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.nav {
+  color: #59009A;
+  position: relative;
+  margin-left: 880px;
+  
+  }
+  
+  .submenu {
+  position: absolute;
+  background-color: #fff;
+  padding: 5px 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: none;
+  top: 24px;
+  left: 0px;
+  width: auto;
+  }
+  
+  .nav:hover .submenu {
+  display: flex;
+  }
+  
+  .submenu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  }
+  
+  .submenu li {
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+  }
+  
+  .submenu li:hover {
+  background-color: #f0f0f0;
+  }
+
+
+/* contenido body */
+main {
+    padding: 20px;
+}
+
+.hero h2 {
+    color: #fff;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    color: #fff;
+    font-size: 24px;
+}
+
+.servicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.servicio {
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #59009A;
+    transition: transform 0.3s ease; /* Añadir transición */
+}
+
+.servicio:hover {
+  transform: scale(1.1); /* Escalar el elemento */
+}
+
+.servicio img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.servicio h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.servicio p {
+    font-size: 16px;
+}
+
+.subir-nuevo {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.subir-nuevo  {
+  text-align: center;
+  margin-top: 40px;
+  display: block;
+  padding: 10px 30px 10px 30px;
+  background-color: #59009A;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 650px; 
+}
+
+.cargar-archivo{
+    width: 10px;
+    height: 90px;
+  }
+
+.subir-nuevo  a{
+    color: #fff;
+     text-decoration: none; 
+}
+
+.background-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.ball {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #6200ea;
+  box-shadow: 0 0 20px #6200ea;
+}
+
+.ball1 {
+  animation: moveWorm1 20s linear infinite;
+}
+
+.ball2 {
+  animation: moveWorm2 15s linear infinite;
+}
+
+@keyframes moveWorm1 {
+  0% {
+      transform: translate(0, 0);
+  }
+  25% {
+      transform: translate(30vw, 20vh);
+  }
+  50% {
+      transform: translate(60vw, 40vh);
+  }
+  75% {
+      transform: translate(30vw, 60vh);
+  }
+  100% {
+      transform: translate(0, 80vh);
+  }
+} 
+
+@keyframes moveWorm2 {
+  0% {
+      transform: translate(100vw, 0);
+  }
+  25% {
+      transform: translate(70vw, 20vh);
+  }
+  50% {
+      transform: translate(40vw, 40vh);
+  }
+  75% {
+      transform: translate(70vw, 60vh);
+  }
+  100% {
+      transform: translate(100vw, 80vh);
+  }
+}
+
+
+@media (max-width: 1070px){
+
+  .servicios{
+      width: 45%;
+      margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px){
+
+  .servicios{
+      width: 100%;
+      margin: 0 auto;
+  }
+}
+
+/* contenido footer */
+footer {
+  background-color: #59009A;
+  color: #ffffff;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-item span {
+  margin-bottom: 5px;
+}
+
+.iconos {
+  display: flex;
+  justify-content: center;
+}
+
+.iconos a {
+  margin: 0 10px;
+}
+
+.iconos img {
+  width: 24px;
+  height: 24px;
+}
+
+.quienes-somos {
+  align-self: center;
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: auto;
+}

@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+  }
+  
+  .navbar {
+    background-color: #fff;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+  }
+   
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 65px;
+    height: 60px;
+    margin: 0px 25px 0px 10px;
+  }
+
+  .logo span{
+    font-size: 20px;
+  }
+  
+  .navbar span {
+    color: #59009A;
+    font-weight: bold;
+    margin-right: 20px;
+  }
+  
+  .servicios {
+    position: relative;
+    margin-left: auto;
+    font-size: 18px;
+  }
+  
+  .submenu {
+    position: absolute;
+    background-color: #fff;
+    padding: 5px 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    top: 22px;
+    left: 0;
+    width: auto;
+  }
+  
+  .servicios:hover .submenu {
+    display: block;
+  }
+  
+  .submenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .submenu li {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .submenu li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    font-size: 18pxpx;
+  }
+
+  .imagen-usuario{
+    width: 30px;
+    height: 30px;
+  }
+  
+  .body {
+    padding: 20px;
+  }
+  
+  .footer {
+    background-color: #59009A;
+    color: #fff;
+    padding: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .contactamos,
+  .canales-atencion,
+  .social-media {
+    display: flex;
+    align-items: center;
+    margin-right: 1px;
+    flex-direction: column;
+  }
+  
+  .contactanos span,
+  .canales-atencion span,
+  .social-media span {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  .imagenes-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .imagen-footer{
+    margin-right: 10px;
+    width: 28px;
+  }
+  
+  .texto-footer {
+    text-align: right;
+    align-items: center;
+  }
+
+.text h1 {
+    margin: 0;
+    color: #6a1b9a;
+}
+
+.text p {
+    margin: 0;
+    color: #999;
+}
+
+main {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.certificate-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.certificate-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.certificate-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
